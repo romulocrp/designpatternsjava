@@ -6,6 +6,11 @@ public class Main {
         calculator.calculateTax();
         User user = new User("romulo") ;
         user.SayHello();
+
+        var account = new Account();
+        account.deposit(10);
+        account.withdraw(5);
+        System.out.println("Account balance: " + account.getBalance());
     }
 
     public static TaxCalculator getCalculator(){
